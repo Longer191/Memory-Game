@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display:flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+    display:flex;
+    justify-content: center;
+    font-size: 20px;
+    background: whitesmoke;
+    border: 1px solid black;
+    align-items: center;
+    height: 200px;
+    flex-direction: column;
+}
+
+.movers {
+    display:flex;
+    justify-content: space-between;
+    height: 50%;
+}
+
+.timer,
+.start-game,
+.mover {
+    font-size: 15px;
+    padding: 70px;
+    cursor: pointer;
+}
+
+.container {
+    background-image: url(../images/opacity.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    filter: alpha(opacity=40);
+}
+
+.game-board {
+    display: flex;
+    flex-wrap: wrap;
+    width:80%;
+    margin-top: 100px;
+    margin: 0 auto;
+}
+
+.cards {
+    margin-top: 30px;
+    flex-basis: 15%;
+    flex-grow: 1;
+    height: 20.33vh;
+    transition: all .4s linear;
+    transform-style: preserve-3d;
+}
+
+.cards:hover {
+    cursor:pointer;
+}
+
+@media (orientation:portrait) {
+
+    .cards {
+        flex-basis: 30%;
+        height: 16.66vh;
+        mix-blend-mode: multiply;
+    }
+}
+
+@mixin image {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.angular {
+    background-image: url(../images/angular.png);
+    @include image;
+}
+.bootstrap {
+    background-image: url(../images/bootstrap.png);
+    @include image;
+}
+.csharp {
+    background-image: url(../images/csharp.png);
+    @include image;
+}
+.css {
+    background-image: url(../images/css.png);
+    @include image;
+}
+.html {
+    background-image: url(../images/html.png);
+    @include image;
+}
+.java {
+    background-image: url(../images/java.png);
+    @include image;
+}
+.js {
+    background-image: url(../images/js.png);
+    @include image;
+}
+.php {
+    background-image: url(../images/php.png);
+    @include image;
+}
+.python {
+    background-image: url(../images/python.png);
+    @include image;
+}
+.react {
+    background-image: url(../images/react.png);
+    @include image;
+}
+.sass {
+    background-image: url(../images/sass.png);
+    @include image;
+}
+.sql {
+    background-image: url(../images/sql.png);
+    @include image;
+}
+.vue {
+    background-image: url(../images/vue.jpg);
+    @include image;
+}
+
+.off {
+    background-image: url(../images/bugs.jpg);
+    @include image;
+}
+
+.hidden {
+    background-image: url(../images/mac.png);
+}
+
+
+
+
